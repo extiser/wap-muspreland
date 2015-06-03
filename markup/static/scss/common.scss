@@ -1,0 +1,116 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+    font-family: Arial;
+}
+
+.wrapper {
+	width: 400px;
+	margin: auto;
+	@media screen and (max-width: 480px) {
+		width: 90%;
+	}
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	border-top: 4px solid #ff4e7d;
+	padding-top: 30px;
+
+	img {
+		width: 100%;
+		height: auto;
+
+		@media screen and (max-width: 480px) {
+			width: 50%;
+		}
+	}
+
+	h1 {
+		font-size: 33/16 * 1em;
+		font-weight: normal;
+		color: #333;
+		margin: 0;
+
+		@media screen and (max-width: 480px) {
+			font-size: 33/26 * 1em;
+		}
+	}
+
+	.btn {
+		display: block;
+		text-decoration: none;
+		background: url(../images/general/btn.png) no-repeat center center;
+		width: 320px;
+		height: 61px;
+		margin: 15px auto 30px;
+
+		@media screen and (max-width: 480px) {
+			width: 90%;
+			background-size: 100% auto;
+			margin: 5px auto 15px;
+		}
+	}
+}
+
+.info {
+	width: 100%;
+	background: #3d444d;
+	padding: 25px 0 5px;
+
+	@media screen and (max-width: 480px) {
+		padding: 10px 0 5px;
+	}
+
+	&__item {
+		font-size: 14/16 * 1em;
+		line-height: 18/14 * 1em;
+		color: #dbdcdd;
+		padding-left: 50px;
+		position: relative;
+		margin-bottom: 20px;
+
+		@media screen and (max-width: 480px) {
+			margin-bottom: 5px;
+			font-size: 12/16 * 1em;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			left: 0;
+		}
+
+		&--how {
+			&:before {
+				background: url(../images/general/info.png) no-repeat;
+
+			}
+		}
+
+		&--age {
+			&:before {
+				background: url(../images/general/18.png) no-repeat;
+
+			}
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	background: #353b43;
+	padding: 25px 0;
+	@media screen and (max-width: 480px) {
+		padding: 10px 0;
+	}
+	p {
+		text-align: center;
+		font-size: 12/16 * 1em;
+		color: #75809a;
+	}
+}
